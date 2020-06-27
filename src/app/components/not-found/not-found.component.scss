@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    height: 50%;
+}
+.NotFound{
+    margin-top: 3%;
+    justify-content: center;
+    width: 80%;
+    display: flex;
+ 
+ &__left{ 
+     display: flex;
+     flex-direction: column;
+    &__MainText{
+        color: #919191;
+        cursor: default;
+        font-size: 187.5%;
+        line-height: 125%;
+        text-transform: none;
+        color: black;
+        font-family: "Flexo-Regular",arial,sans-serif;
+     }
+     &__smalltext{
+        font-size: 125%;
+        color: #999999;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        line-height: 1.25em;
+    }
+        &__right{
+            &__img{
+            }
+           
+            width: 30%;
+            background-image: url(../../../assets/images/psyduck.png);
+            background-size: contain;
+            }
+ 
+}
+     }
+     .backgroundBlockBlack{
+
+     width: 10%;
+     background-image: url(../../../assets/images/body_bg__white.PNG);
+     background-size: cover;
+
+     }

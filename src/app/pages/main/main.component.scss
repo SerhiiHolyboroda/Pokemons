@@ -1,0 +1,346 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+$AlmostBlack: #313131;
+$Red:#e3350d;
+$Orange:#ee6b2f;
+$Yellow:#e6bc2f;
+$Green:#4dad5b;
+$LightBlue:#30a7d7;
+$DarkBlue:#1b53ba;
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.textHead{
+    color: white;
+    font-size: 137.5%;
+    line-height: 125%;
+    text-transform: none;
+    font-family: "Flexo-Medium",arial,sans-serif;
+}
+.Main{
+    // margin: 20% 0 0 0;
+   
+display: flex;
+}
+.backgroundBlockWhite{
+ 
+width: 10%;
+background-image: url(../../../assets/images/body_bg.png);
+background-size: contain;
+}
+.backgroundBlockBlack{
+    width: 10%;
+    background-image: url(../../../assets/images/body_bg__white.PNG);
+    background-size: contain;
+    }
+ 
+.left{
+    padding:2% 0 0 0;
+    width:40%;
+    display: flex;
+    flex-direction: column;
+ 
+   &__stream{
+    margin: 0 0 2.2% 2%;
+ 
+   &__up{
+       
+       width: 578.250px;
+   height:   327.141px;
+   img {
+    border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+}  
+    //    background-image: url(../../../assets/images/kalruna.jpg);
+    //    background-size: cover;
+    //               border-top-left-radius: 5px;
+    //     border-top-right-radius: 5px;
+}
+   &__down{
+       width: 578.250px;
+       height: 130.500px;
+                background-color: #4dad5b;
+}
+}
+      
+ 
+   &__wrapper{
+       display: flex;
+  
+   &__Armor{
+    margin: 0 0 0 2%;
+   &__up{
+    height:158.438px ;
+    width: 280.078px;        
+ img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+        width: 100%;
+        height: auto;
+    }  
+}
+              
+    
+            &__down{
+                height:87px ;
+width: 280.078px;
+                background-color: 	#e3350d;
+            }
+        }
+
+  
+            &__Analysis{
+                margin: 0 0 0 3%;
+           
+            &__up{
+                height:158.438px ;
+                width: 280.078px;    
+                img {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    width: 100%;
+                    height: auto;
+                }  
+            }
+              
+           
+            &__down{
+                height:87px ;
+              width: 280.078px;
+                background-color: 	#313131;
+            }
+        }
+        }
+    }
+
+   
+.right{
+    // margin: 0 0 0 5%;
+    padding:2% 2% 0 0;
+    width:20%;
+display: flex;
+flex-direction: column;
+padding-bottom: 5%;
+    &__Tactics{
+        margin: 4% 0 0 0;
+            &__up{
+                width: 281.188px;
+                height: 159.078px ;        
+                img {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                    width: 100%;
+                    height: auto;
+                }  
+       
+    }
+              
+        
+    &__down{
+                width:281.188px;
+        height: 159.078px ;   
+        background-color:#855ac9;
+        &__textHead{
+            padding-top: 10px;
+            // margin-top: 20px;
+        }
+    }
+}
+              
+    
+              
+ 
+ 
+  
+ 
+ &__NewGmes{
+     display: flex;
+     margin: 4% 0 0 0;
+    &__up{
+        width:140.594px;
+        height: 149.953px ;
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            height:149.938px;
+        }  
+    }
+      
+   &__down{
+   width:140.594px;
+        height: 149.953px ;
+    background-color: 	#1b53ba;
+     
+   }
+}
+      
+ 
+   &__Weedle{
+    margin: 4% 0 0 0;
+    &__up{
+        width:281.188px;
+        height: 159.078px ;
+        img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            height: auto;
+        }  
+         
+    }
+      
+    &__down{
+        width:281.188px;
+        height: 159.078px ;
+        background-color: #e6bc2f;
+    }
+      
+}
+ 
+} 
+
+.AlmostBottom{
+    display: flex;
+    width: 100%;
+height: 15%;
+&__right{ 
+ 
+    width: 9.8%;
+background-image: url(../../../assets/images/body_bg.png);
+background-size: contain;
+}
+&__main{
+width: 80.4%;
+background-image: url(../../../assets/images/bg_long.PNG);
+background-size: cover;
+&__link{
+    margin: 5% 10%  10%  70%;
+  
+&__button{
+    background-color: #313131;
+  
+border-radius: 5px;
+border: none;
+clear: both;
+background-color: #212121;
+cursor: pointer;
+font-size: 105%;
+ 
+line-height: 125%;
+margin: 1.5625%;
+padding: 0.75em 1.25em 0.675em;
+vertical-align: middle;
+text-align: center;
+text-transform: none;
+font-family: "Flexo-Demi",arial,sans-serif;
+.textBottom{
+    
+    color: white;
+    font-size: 100.5%;
+    font: 400 14px/20px Roboto, "Helvetica Neue", sans-serif;
+    line-height: 125%;
+    text-transform: none;
+ 
+}
+}
+}
+}
+&__left{
+    width: 9.8%;
+       background-image: url(../../../assets/images/body_bg.png);
+background-size: contain;
+   }
+ 
+
+}
+ 
+// background-image: url(../../../assets/images/body_bg.png);
+// background-size: contain;
+ 
+ 
+
+@media screen and (max-width: 1647px) {
+    .AlmostBottom__main{
+        width: 88%;
+    }
+    .backgroundBlockWhite{
+        width:7%
+    }
+    .AlmostBottom__right{
+        width:6.9%
+    }
+    .AlmostBottom__left{
+        width:6.9%
+    }
+    .backgroundBlockBlack{
+        width:13%
+    }
+    .AlmostBottom__main__link{
+   
+        margin-right: 1%;
+
+}
+
+}
+@media screen and (max-width: 1431px) {
+  .left{
+     
+      width: 80%;
+  }
+ 
+    .AlmostBottom__main{
+        width: 88.6%;
+    }
+  
+    .AlmostBottom__right{
+        width:6.9%
+    }
+    .AlmostBottom__left{
+        width:6.9%
+    }
+    .AlmostBottom__main__link{
+   
+        margin-right: 1%;
+
+}
+
+
+}
+@media screen and (max-width: 1171px) {
+    .right { display: none;}
+    .left{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .AlmostBottom__main__link{
+   
+            margin-right: 1%;
+            margin-left: 0;
+ 
+    }
+    .right{
+        display: none;
+            }
+    .backgroundBlockWhite{
+        width:0%
+    }
+    
+    .backgroundBlockBlack{
+        width:20%
+    }
+
+
+}

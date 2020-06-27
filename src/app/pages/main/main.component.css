@@ -1,0 +1,558 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 2px solid #d3d3d3;
+  background-color: #f5f5f5;
+}
+
+.header__pokemon {
+  margin-top: 1%;
+  width: 79px;
+  height: 45px;
+}
+
+.header__pokemon img {
+  width: 100%;
+  height: auto;
+}
+
+.header__shop {
+  margin-top: 1%;
+  width: 79px;
+  height: 45px;
+}
+
+.header__shop img {
+  width: 100%;
+  height: auto;
+}
+
+.header__play {
+  margin-top: 1%;
+  width: 79px;
+  height: 45px;
+}
+
+.header__play img {
+  width: 100%;
+  height: auto;
+}
+
+.header__dungeon {
+  margin-top: 1%;
+  width: 175px;
+  height: 50px;
+}
+
+.header__dungeon img {
+  width: 100%;
+  height: auto;
+}
+
+.header__clash {
+  margin-top: 1%;
+  width: 175px;
+  height: 50px;
+}
+
+.header__clash img {
+  width: 100%;
+  height: auto;
+}
+
+.header__swordshield {
+  margin-top: 1%;
+  width: 176px;
+  height: 50px;
+}
+
+.header__swordshield img {
+  width: 100%;
+  height: auto;
+}
+
+.Menu {
+  margin-top: 0.2%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.5px solid #d3d3d3;
+}
+
+.Menu__img {
+  height: 26.25px;
+  height: 26px;
+}
+
+.Menu * {
+  background-color: #313131;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Menu ::before {
+  content: ' ';
+  border-right: 2px solid #222;
+  height: 93px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.Menu__Home {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  margin-left: 25%;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__Home ::after {
+  bottom: -6px;
+  border-radius: 0 0 0 8px;
+  background-color: #1b53ba;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__PokeDex {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__PokeDex :hover {
+  background-color: #e3350d;
+  width: 14.28571%;
+}
+
+.Menu__PokeDex ::after {
+  bottom: -6px;
+  background-color: #e3350d;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__Games {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__Games :hover {
+  background-color: #ee6b2f;
+}
+
+.Menu__Games ::after {
+  bottom: -6px;
+  background-color: #ee6b2f;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__CardGame {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__CardGame :hover {
+  background-color: #e6bc2f;
+}
+
+.Menu__CardGame ::after {
+  bottom: -6px;
+  background-color: #e6bc2f;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__PokemonTV {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__PokemonTV :hover {
+  background-color: #4dad5b;
+}
+
+.Menu__PokemonTV ::after {
+  bottom: -6px;
+  background-color: #4dad5b;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__PokemonEvents {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__PokemonEvents :hover {
+  background-color: #30a7d7;
+}
+
+.Menu__PokemonEvents ::after {
+  bottom: -6px;
+  background-color: #30a7d7;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.Menu__News {
+  font-family: "Flexo-Demi",arial,sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 87.5%;
+  margin: 0 auto;
+  opacity: 1;
+  position: relative;
+  text-align: center;
+  margin-right: 25%;
+  width: 14.28571%;
+  position: relative;
+}
+
+.Menu__News :hover * {
+  background-color: #1b53ba;
+}
+
+.Menu__News ::after {
+  bottom: -6px;
+  border-radius: 0 0 8px 0;
+  background-color: #1b53ba;
+  -webkit-transition: background-color 0.25s, height 0.25s;
+  transition: background-color 0.25s, height 0.25s;
+  content: ' ';
+  height: 6px;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.textHead {
+  color: white;
+  font-size: 137.5%;
+  line-height: 125%;
+  text-transform: none;
+  font-family: "Flexo-Medium",arial,sans-serif;
+}
+
+.Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.backgroundBlockWhite {
+  width: 10%;
+  background-image: url(../../../assets/images/body_bg.png);
+  background-size: contain;
+}
+
+.backgroundBlockBlack {
+  width: 10%;
+  background-image: url(../../../assets/images/body_bg__white.PNG);
+  background-size: contain;
+}
+
+.left {
+  padding: 2% 0 0 0;
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.left__stream {
+  margin: 0 0 2.2% 2%;
+}
+
+.left__stream__up {
+  width: 578.250px;
+  height: 327.141px;
+}
+
+.left__stream__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.left__stream__down {
+  width: 578.250px;
+  height: 130.500px;
+  background-color: #4dad5b;
+}
+
+.left__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left__wrapper__Armor {
+  margin: 0 0 0 2%;
+}
+
+.left__wrapper__Armor__up {
+  height: 158.438px;
+  width: 280.078px;
+}
+
+.left__wrapper__Armor__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.left__wrapper__Armor__down {
+  height: 87px;
+  width: 280.078px;
+  background-color: #e3350d;
+}
+
+.left__wrapper__Analysis {
+  margin: 0 0 0 3%;
+}
+
+.left__wrapper__Analysis__up {
+  height: 158.438px;
+  width: 280.078px;
+}
+
+.left__wrapper__Analysis__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.left__wrapper__Analysis__down {
+  height: 87px;
+  width: 280.078px;
+  background-color: #313131;
+}
+
+.right {
+  padding: 2% 2% 0 0;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.right__Tactics {
+  margin: 4% 0 0 0;
+}
+
+.right__Tactics__up {
+  widows: 281.188px;
+  height: 159.078px;
+}
+
+.right__Tactics__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.right__Tactics__down {
+  widows: 281.188px;
+  height: 159.078px;
+  background-color: #855ac9;
+}
+
+.right__Tactics__down__textHead {
+  padding-top: 10px;
+}
+
+.right__NewGmes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 4% 0 0 0;
+}
+
+.right__NewGmes__up {
+  widows: 112.469px;
+  height: 149.953px;
+}
+
+.right__NewGmes__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.right__NewGmes__down {
+  widows: 112.469px;
+  height: 149.953px;
+  background-color: #1b53ba;
+}
+
+.right__Weedle {
+  margin: 4% 0 0 0;
+}
+
+.right__Weedle__up {
+  width: 281.188px;
+  height: 159.078px;
+}
+
+.right__Weedle__up img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+
+.right__Weedle__down {
+  width: 281.188px;
+  height: 159.078px;
+  background-color: #e6bc2f;
+}
+
+@media screen and (max-width: 1647px) {
+  .backgroundBlockWhite {
+    width: 7%;
+  }
+  .backgroundBlockBlack {
+    width: 13%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .backgroundBlockWhite {
+    width: 0%;
+  }
+  .backgroundBlockBlack {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=main.component.css.map */
