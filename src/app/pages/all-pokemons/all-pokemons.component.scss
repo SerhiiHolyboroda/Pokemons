@@ -9,8 +9,9 @@
 .Pokemons {
   
   display: flex;
-  justify-content: space-between;
-  width: 70%;
+  justify-content:center;
+  align-items: center;
+  width: 100%;
 
   &__List1 {
     width:  33%;

@@ -109,17 +109,10 @@ $DarkBlue:#1b53ba;
         align-items: center;
       
     }
-    ::before {
-        content: ' ';
-        border-right: 2px solid #222;
-        height: 93px;
-        left: 0;
-        position: absolute;
-        top: 0;
-        z-index: 2;
-    }
+ 
     
     &__Home{
+        border-right: 2px solid #222;
         // background-color: $AlmostBlack;
   
         // :hover{
@@ -133,10 +126,18 @@ $DarkBlue:#1b53ba;
     opacity: 1;
     position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
    
         margin-left: 25%;
        width: 14.28571%; 
         position: relative;
+        :hover{
+            height: 100px;
+           
+                    }
         ::after{
             bottom: -6px;
             border-radius: 0 0 0 8px;
@@ -155,6 +156,7 @@ $DarkBlue:#1b53ba;
 
     }
     &__PokeDex{
+        border-right: 2px solid #222;
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #fff;
         display: block;
@@ -167,7 +169,7 @@ $DarkBlue:#1b53ba;
         width: 14.28571%;
         position: relative;
         :hover{
-background-color: $Red;
+height: 100px;
 width: 14.28571%;
         }
         ::after{
@@ -188,6 +190,7 @@ width: 14.28571%;
 
     }
     &__Games{
+        border-right: 2px solid #222;
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #fff;
         display: block;
@@ -200,7 +203,10 @@ width: 14.28571%;
         width: 14.28571%;
         position: relative;
         :hover{
-            background-color: $Orange;
+            .Menu__PokeDex{
+            height: 100px;
+            }
+        
                     }
         ::after{
             bottom: -6px;
@@ -219,6 +225,7 @@ width: 14.28571%;
     }
     }
     &__CardGame{
+        border-right: 2px solid #222;
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #fff;
         display: block;
@@ -231,7 +238,8 @@ width: 14.28571%;
        width: 14.28571%;
         position: relative;
         :hover{
-            background-color: $Yellow;
+            height: 100px;
+     
                     }
         ::after{
             bottom: -6px;
@@ -250,6 +258,7 @@ width: 14.28571%;
     }
     }
     &__PokemonTV{
+        border-right: 2px solid #222;
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #fff;
         display: block;
@@ -262,7 +271,8 @@ width: 14.28571%;
        width: 14.28571%;
         position: relative;
         :hover{
-            background-color: $Green;
+            height: 100px;
+      
                     }
         ::after{
             bottom: -6px;
@@ -281,6 +291,7 @@ width: 14.28571%;
     }
     }
     &__PokemonEvents{
+        border-right: 2px solid #222;
         font-family: "Flexo-Demi",arial,sans-serif;
         color: #fff;
         display: block;
@@ -293,7 +304,8 @@ width: 14.28571%;
        width: 14.28571%;
         position: relative;
         :hover{
-            background-color: $LightBlue;
+            height: 100px;
+        
                     }
                
         ::after{
@@ -326,9 +338,9 @@ width: 14.28571%;
        width: 14.28571%;
 position: relative;
 :hover{
-    *{
-    background-color: $DarkBlue;
-    }
+ 
+    height: 100px;
+ 
             }
  
  
@@ -343,11 +355,46 @@ position: relative;
             
             position: absolute;
           
-            width: 50%;
+            width: 100%;
             z-index: 10;
  
     }
 }
 }
+// icons
+.fa.fa-home{
  
+  color: gray !important;
+  font-size: 20px !important;
+}
+
+.fas.fa-tablets{
+    color: #e3350d !important;
+    font-size: 20px !important;
+ }
+
+ .fas.fa-gamepad {
+    color: 	#ee6b2f !important;
+    font-size: 20px !important;
+ }
+ .fab.fa-phoenix-framework{
+    color: 	#e6bc2f !important;
+    font-size: 20px !important;
+ }
+ .fas.fa-tv{
+    color: 	#4dad5b !important;
+    font-size: 20px !important;
+ }
+
+ 
+ .fas.fa-dragon {
+    color: 	#30a7d7 !important;
+    font-size: 20px !important;
+ }
+
+ .fas.fa-newspaper {
+    color: #1e53b4 !important;
+    font-size: 20px !important;
+ }
+// icons
  

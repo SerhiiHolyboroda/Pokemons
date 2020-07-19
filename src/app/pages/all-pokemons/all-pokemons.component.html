@@ -116,19 +116,15 @@
       </div>
 
 
-      <div class="Pokemons__List3" >
+      <!-- <div class="Pokemons__List3" >
         <div *ngFor="let p of Allpp , let i = index  " (click)="onClickMe(Allpp , i)">
-          <!-- <div *ngIf="   i >= 101 ">  -->
+         
             <ng-container *ngIf="hide"> 
           <div *ngIf="   i >= 101 && i <= oneHundredTwentyFive" class="border"  >
-            <!--тут border -->
-            <!-- <div>{{   [i] }}</div>
-            <div> {{  p[i]}}</div> -->
+           
             <div class="images"> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt=""></div>
             <div class="Pokemons__List3__pName">{{  p.name }}</div>
-            <!-- <div>тут ід {{  p.id }}</div> -->
-
-            <!-- <div>{{  p.types[0].type.name}}  </div> -->
+             
             <div class="flex">
               <div *ngFor="let n of p.types , let a = index  ">
                 <div class="{{  n.type.name }}" *ngIf="n.type.name" id="checker"> {{  n.type.name }} </div>
@@ -137,12 +133,12 @@
             </div>
             <div class='{{p.url}}'>{{  p.url}}</div>
 
-            <!-- <td>{{  p.url }}</td>  -->
+      
 
           </div>
         </ng-container>
         </div>
-      </div>
+      </div> -->
 
 
     </div>
