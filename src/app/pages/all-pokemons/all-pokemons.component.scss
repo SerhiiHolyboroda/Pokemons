@@ -3,6 +3,7 @@
   flex-direction: row;
  
 }
+
 .top{
   margin-top: 10px;
 }
@@ -63,10 +64,13 @@
   text-decoration: none;
   font-size: .8em;
   letter-spacing: 1.5px;
-  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! right:0;
+ 
+ 
+ 
+ 
+  position: sticky;
   right: 0;
-  //    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! right:0;
-  position: fixed;
+ 
   display: flex;
   justify-content: center;
   width: 30%;
@@ -284,6 +288,8 @@ img {
 
 .flex {
   display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -527,3 +533,23 @@ a {
   color: #2D3142;
 }
 
+.custom-checkbox {
+ 
+}
+
+.custom-checkbox-input {
+  display: none;
+}
+
+.custom-checkbox-text {
+  padding: 1rem;
+  background-color: #aaa;
+  color: #555;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox-input:checked ~ .custom-checkbox-text {
+  background-color: red;
+  color: white;
+}

@@ -123,15 +123,7 @@ Types:Array<any> =[]
  
  
 
-  // public createPList():void{
-  //   const newP:IAll = new Plist(this.id, this.name , this.url);
-  //   if(this.Arraya.length > 0){
-  //     newP.id = this.Arraya.slice(-1)[0].url.slice(34, -1);
-  //     newP.name = this.Arraya.slice(-1)[0].name
-  //     newP.url = this.Arraya.slice(-1)[0].url
-  //     console.log('what' , newP)
-  //   }
-  // }
+ 
   onClickMe(Allpp , i){
     this.Clicked.pop()
     this.Clicked.push(this.Allpp[i])
@@ -152,71 +144,30 @@ hideinfo(){
 
   chooseType(event : any, i: number){
     this.count++
-    console.log('', event)
-    console.log('1', event)
-    console.log('1', event.srcElement.value)
+    console.log('!!!!!!!!!!!!!!', event)
+    console.log('!!!!!!!!!!', event)
+    console.log('!!!!!!!!!!!!', event.srcElement.value)
     this.i = ++event.srcElement.value
     console.log(this.i)
-  //  event.srcElement.className += event.srcElement.value
-  //  <HTMLElement>document.querySelector(".check") 
   
-         
-    // if(document.querySelectorAll('.chosen').checked == false){
-    //   console.log('none')
-    // }
-    // if(event.srcElement.checked == false){
-    //   console.log('none chosen ')
-    // }
-    // if(event.srcElement.checked) {
-    //   console.log(event.srcElement.value)
-    // }
-    // this.hide = false
-//     console.log(event.srcElement.className)
-//     if( document.getElementById('checker').className != event.srcElement.className){
-//  document.getElementById('checker').hidden = true
-//  document.getElementById('checker').style.border = 'none'
-//     }
-//  this.Allpp.forEach(element => {
-//   // element.filter(t => t.type.types[0].name == event.srcElement.className)
+    this.getCustomT(this.i)
+// if(this.count % 2 != 0) {
  
-//  for(let i:number = 0 ; this.Allpp.length > i ; i++){
-//     console.log('check 1' , this.Allpp[i].types[0].type.name)
-//     console.log('check 2' , event.srcElement.className) 
-
-//     // event.srcElement.checked
-//    if(this.Allpp[i].types[0].type.name == event.srcElement.className  ){
-//     // || this.Allpp[i].types[1].name == event.srcElement.className)
-//   //  console.log(event.srcElement.className)
-//    this.AllNewp.push(this.Allpp[i])
-//    } }})
+// this.getCustomT(this.i)
+// }
  
-//  console.log('here they are' , this.AllNewp)
-//  this.Allpp = this.AllNewp
+// if(this.count % 2 == 0) {
+//   let x = document.getElementsByClassName("check");
+//   let n: number;
+//   for (n = 0; n < x.length; n++) {
+//       (<HTMLElement>x[n]).setAttribute("checked", "true");
+//       // (<HTMLElement>x[i]).checked = "checked";
+//       (< HTMLInputElement > x[n]).checked = false;
 //   }
- 
-if(this.count % 2 != 0) {
-// this.Allpp.forEach(element => { 
-//  if(element.types[0].type.name == event.srcElement.value){
-//   this.AllNewp.push(element)
-//  }
-//  console.log('here' , event.srcElement.value)
-// })
-// console.log('here they are' , this.AllNewp)
-// this.Allpp = this.AllNewp
-this.getCustomT(this.i)
-}
- 
-if(this.count % 2 == 0) {
-  let x = document.getElementsByClassName("check");
-  let n: number;
-  for (n = 0; n < x.length; n++) {
-      (<HTMLElement>x[n]).setAttribute("checked", "true");
-      // (<HTMLElement>x[i]).checked = "checked";
-      (< HTMLInputElement > x[n]).checked = false;
-  }
-  this.Allpp = []
-  this.getP()
-}
+//   this.Allpp = []
+//   this.getP()
+  
+// }
  
   }
 

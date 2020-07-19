@@ -38,7 +38,14 @@
 <div class="top"></div>
 <div class="flex  Typelist ">
   <div *ngFor="let type of Types , let i = index  ">
-    <input type="checkbox" class="check" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }}"> {{  type.name }} </h4>
+
+    <label class="custom-checkbox">
+      <input type="hidden" name="alarm" value="False" />
+      <input class="custom-checkbox-input" name="alarm" value="True" type="checkbox" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }}"> {{  type.name }} </h4>
+      <!-- <span class="custom-checkbox-text">Alarm</span> -->
+    </label>
+
+    <!-- <input type="checkbox" class="check" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }}"> {{  type.name }} </h4> -->
      
   </div>
 </div>
@@ -155,7 +162,7 @@
 
 
     <div class="info"   (click)="hideinfo()" *ngIf="hideme">
-      <div class="">{{ Clicked }}</div>
+      <!-- <div class="">{{ Clicked }}</div> -->
       <div *ngFor="let p of Clicked , let i = index  ">
         <div> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt=""></div>
 
