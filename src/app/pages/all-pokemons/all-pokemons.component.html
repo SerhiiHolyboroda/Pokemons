@@ -31,27 +31,44 @@
 
 
 
-
+<!-- <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div> -->
 
  
 
 <div class="top"></div>
-<div class="flex  Typelist ">
-  <div *ngFor="let type of Types , let i = index  ">
-
-    <label class="custom-checkbox">
+<div class=" Typelist dropdown"  >
+  <div *ngFor="let type of Types , let i = index  "   class="StylingTypes dropdown-content">
+ 
+ 
+     <label class="custom-checkbox   "  >
+ 
       <input type="hidden" name="alarm" value="False" />
-      <input class="custom-checkbox-input" name="alarm" value="True" type="checkbox" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }}"> {{  type.name }} </h4>
-      <!-- <span class="custom-checkbox-text">Alarm</span> -->
+      <input class="custom-checkbox-input" name="alarm" value="True" type="checkbox" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }} ForAllTypes  "> {{  type.name }} </h4>
+    
     </label>
-
-    <!-- <input type="checkbox" class="check" (click)="chooseType($event , i)" id="checkbox{{i}}" value="{{i}}"><h4 class="{{  type.name }}"> {{  type.name }} </h4> -->
-     
+ 
   </div>
+  <div class="dropbtn">Filter</div>
 </div>
+
+ 
+ 
+ 
+ 
+     
+  
+ 
 <div class="column">
   <div class="main">
-
+    <div class="backgroundBlockWhite"></div> 
+    <div class="backgroundBlockBlack"></div> 
 
 
 
@@ -73,12 +90,15 @@
             <!-- <div>{{   [i] }}</div>
             <div> {{  p[i]}}</div> -->
             <div class="images"> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt=""></div>
+            <div  class="Pid">   #{{  p.id }}</div>
             <div class="Pokemons__List1__pName">{{  p.name }}</div>
             <!-- <div>тут ід {{  p.id }}</div> -->
 
             <!-- <div>{{  p.types[0].type.name}}  </div> -->
             <div class="flex">
+               
               <div *ngFor="let n of p.types , let a = index  ">
+                
                 <div class="{{  n.type.name }}"> {{  n.type.name }} </div>
               </div>
             </div>
@@ -103,12 +123,14 @@
             <!-- <div>{{   [i] }}</div>
             <div> {{  p[i]}}</div> -->
             <div class="images"> <img src="https://pokeres.bastionbot.org/images/pokemon/{{p.id}}.png" alt=""></div>
+            <div  class="Pid">   #{{  p.id }}</div>
             <div class="Pokemons__List2__pName">{{  p.name }}</div>
             <!-- <div>тут ід {{  p.id }}</div> -->
 
             <!-- <div>{{  p.types[0].type.name}}  </div> -->
             <div class="flex">
               <div *ngFor="let n of p.types , let a = index  ">
+             
                 <div class="{{  n.type.name }}"> {{  n.type.name }} </div>
               </div>
             </div>
@@ -187,6 +209,9 @@
       </div>
     </div>
     
+
+    <div class="backgroundBlockBlack"></div> 
+<div class="backgroundBlockWhite"></div> 
   </div>
 
    

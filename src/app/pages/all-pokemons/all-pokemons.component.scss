@@ -1,7 +1,17 @@
 .main {
   display: flex;
   flex-direction: row;
+ .backgroundBlockWhite{
  
+width: 10%;
+background-image: url(../../../assets/images/body_bg.png);
+background-size: contain;
+}
+.backgroundBlockBlack{
+    width: 10%;
+    background-image: url(../../../assets/images/body_bg__white.PNG);
+    background-size: contain;
+    }
 }
 
 .top{
@@ -13,19 +23,26 @@
   justify-content:center;
   align-items: center;
   width: 100%;
-
+  .Pid{
+    margin-top: 2%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+  }
   &__List1 {
+    
+     
     width:  33%;
      
    
     &__pName {
-
+      margin-right: 15%;
       font-family: "Flexo-Demi",arial,sans-serif;
-    color: #313131;
-    text-transform: none;
-    font-size: 145%;
-    margin-bottom: 5px;
+      color: #313131;
+      text-transform: none;
+      font-size: 145%;
+      margin-bottom: 2%;
     }
+ 
   }
 
   &__List2 {
@@ -34,11 +51,12 @@
    
 
     &__pName {
+      margin-right: 15%;
       font-family: "Flexo-Demi",arial,sans-serif;
-    color: #313131;
-    text-transform: none;
-    font-size: 145%;
-    margin-bottom: 5px;
+      color: #313131;
+      text-transform: none;
+      font-size: 145%;
+      margin-bottom: 5px;
     }
   }
 
@@ -49,6 +67,7 @@
    
 
     &__pName {
+      margin-right: 15%;
       font-family: "Flexo-Demi",arial,sans-serif;
     color: #313131;
     text-transform: none;
@@ -80,189 +99,445 @@
 
 //  background-color:  #424242 ;
 // }
-.normal {
-  
-  background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
-  font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 110px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
  
+ 
+ 
+ 
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content div {
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  color: black;
+  width: 200px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content  div:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.ForAllTypes {
+  border: 2px solid #a4a4a4;
+    border-radius: 5px;
+    line-height: 28px;
+    max-width: 110px;
+  
+ 
+
+ 
+    font-family: "Flexo-Medium",arial,sans-serif;
+    cursor: pointer;
+    float: left;
+    height: 28px;
+    margin: 0 0.75em 0 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Typelist{
+  display: flex;
+  flex-direction: column;
+ background-color: gray;
+ 
+
+}
+.StylingTypes{
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+ 
+ 
+.normal {
+  
+  // background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+  // font-family: "Flexo-Medium",arial,sans-serif;
+  // border: 2px solid #a4a4a4;
+  // border-radius: 5px;
+  // line-height: 28px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // width: 100%;
+  // max-width: 110px;
+  font-family: "Flexo-Medium",arial,sans-serif;
+  border-radius: 3px;
+  line-height: 18px;
+  max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
 }
 
 .fire{
-  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+  background-color: #fd7d24;
+  color: #fff;
 }
 
 .fighting {
-  background:linear-gradient(180deg, #d56723 50%, #d56723 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
+    background-color: #d56723;
+    color: #fff;
+
 }
 
 .water {
-  background:linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+  background-color: #4592c4;
+  color: #fff;
 }
 
 .flying {
-  background:linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  background-color: #3dc7ef;
+  color: #212121;
 }
 
 .grass {
-  background:linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+    background-color: #9bcc50;
+    color: #212121;
 }
 
 .poison {
-  background:linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+    background-color: #b97fc9;
+    color: #fff;
 }
 
 .electric {
-  background:linear-gradient(180deg, #eed535 50%, #eed535 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+  background-color: #eed535;
+  color: #212121;
 }
 
 .ground {
-  background:linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+    background-color: #f7de3f;
+    color: #212121;
 }
 
 .psychic {
-  background:linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+    background-color: #f366b9;
+    color: #fff;
 }
 
 .rock {
-  background:linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+  background-color: #a38c21;
+  color: #fff;
 }
 
 .ice {
-  background:linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+  background-color: #51c4e7;
+  color: #212121;
 }
 
 .bug {
-  background:linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+  background-color: #729f3f;
+  color: #fff;
 }
 
 .dragon {
-  background:  linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  background-color: #53a4cf;
+  color: #fff;
 }
 
 .ghost {
-  background:linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+    background-color: #7b62a3;
+    color: #fff;
 }
 
 .dark {
-  background:linear-gradient(180deg, #707070 50%, #707070 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #707070 50%, #707070 50%);
+  background-color: #707070;
+  color: #fff;
 }
 
 .steel {
-  background:linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+  background-color: #9eb7b8;
+  color: #212121;
 }
 
 .fairy {
-  background:linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
+  background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);
+    background-color: #fdb9e9;
+    color: #212121;
 }
 .shadow{
-  background:linear-gradient(180deg, #4e4a49 50%, #4e4a49 50%);
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
 }
 .unknown{
-  background:linear-gradient(180deg, #111111 50%, #111111 50% );
   font-family: "Flexo-Medium",arial,sans-serif;
-  border: 2px solid #a4a4a4;
-  border-radius: 5px;
-  line-height: 28px;
+  border-radius: 3px;
+  line-height: 18px;
   max-width: 110px;
-  color: white;
+  margin: 0 1.5625% 0 0;
+  width: 242px;
+ 
+  text-transform: none;
+  font-size: 11px;
+  text-align: center;
+  background-color: #a4acaf;
+  color: #212121;
 }
 
 .images{
@@ -304,7 +579,7 @@ img {
   justify-content: center;
   align-items: center;
   // border: 1px solid black;
-  margin: 10px 0 10px 0 ;
+  margin: 5% 0 10% 0 ;
    
 }
  
@@ -348,8 +623,9 @@ img {
 .b1{
  bottom: 0;
 }
-
-
+ 
+ 
+ 
 
 .Types {
   transform: rotate(90deg);
